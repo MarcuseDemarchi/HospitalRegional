@@ -1,0 +1,78 @@
+html,body,main{
+    margin:0px;
+    padding:0px;
+    background-color:rgb(38 31 31 / 87%);  
+    height:100%;
+}
+
+main{
+    width:100%;    
+    color:white;
+}
+
+.containerHeader > h1,.containerResponse> h1{
+    font-size:5vh;
+}
+
+#Question{
+    font-size:4vh;
+}
+
+.btnsQuestions{
+    display:grid;
+    justify-items:center;
+    align-items:center;
+    grid-template-columns:10% 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    height:10vh;
+}
+
+.btnSatisfation{    
+    border-radius:10px;
+    background-color:#00dc49;
+    height:65%;
+    width:50%;
+    font-size:3vh;
+}
+
+.btnSatisfation:hover{    
+    box-shadow:0.5vh 0.5vh 3vh white;
+    height:75%;
+    width:60%;
+    font-size:3.5vh;
+}
+
+input#reponseTxt {
+    height: 10vh;
+    background:none;
+    border:1px solid white;
+    color:white;
+    width: 130vh;
+}
+
+
+.containerBtn{
+    display:flex;
+    justify-content:right;
+    align-items:center;
+    height:8vh;
+}
+
+.containerBtn > button{
+    width:25vh;
+    height:75%;
+    margin-right:2vh;
+    font-size:4vh;
+    border-radius:0.5vh;
+    background-color:#239e10;
+    border:none;
+}
+
+.onClose {
+    display: grid;
+    justify-content: end;
+    background-color: rgb(38 31 31 / 87%);
+}
+
+.containerHeader,.containerResponse{
+    margin-left: 1vh;
+}

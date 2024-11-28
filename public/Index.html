@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!--JavaScript Libs-->
+    <script src="js/script.js"></script>
+    <title>Index</title>
+</head>
+<body>
+    <nav class="barLeft">
+        <div class="btnExpandir">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <ul>
+            <li class="itemMenu">
+                <a href="#">
+                    <span class="menuIcon">
+                        <i class="bi bi-house-fill"></i>
+                    </span>
+                    <span class="textIcon">Home</span>
+                </a>
+            </li>
+            <li class="itemMenu" id="admin" onclick="loadInterfaceAdmin()">
+                <a href="#">
+                    <span class="menuIcon">
+                        <i class="bi bi-person-circle"></i>
+                    </span>
+                    <span class="textIcon"> Conta</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="titleHeader">
+            <img src="../src/HRAV.png" alt="Logo Hospital Regional do Alto Vale">
+            <h1>HOSPITAL REGIONAL <br> DO ALTO VALE</h1>
+        </header>
+
+        <div id="containerSectors">
+            <div class="sectors" onclick="loadArrayQuestions(1)">
+                <span class="menuIconSectors">  
+                    <svg xmlns="http://www.w3.org/2000/svg" height="81px" viewBox="0 -960 960 960" width="81px" fill="#e8eaed">
+                        <path d="m394-60-56-56 44-44H200v-80h182l-44-44 56-56 140 140L394-60ZM200-280v-520q0-33 23.5-56.5T280-880h400q33 0 56.5 23.5T760-800v520h-80v-62q-40-29-90.5-43.5T480-400q-59 0-109.5 14.5T280-342v62h-80Zm80-154q48-23 98.5-34.5T480-480q51 0 101.5 11.5T680-434v-366H280v366Zm280 274v-80h200v80H560Zm-80-360q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 200Zm0-240Z"/>
+                    </svg>
+                    <h2 class="textIconSectors">RECEPÇÃO</h2>
+                </span>
+            </div> 
+            <div class="sectors" onclick="loadArrayQuestions(2)">
+                <span class="menuIconSectors">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="81px" viewBox="0 -960 960 960" width="81px" fill="#e8eaed">
+                        <path d="M160-80q-33 0-56.5-23.5T80-160v-480q0-33 23.5-56.5T160-720h160v-80q0-33 23.5-56.5T400-880h160q33 0 56.5 23.5T640-800v80h160q33 0 56.5 23.5T880-640v480q0 33-23.5 56.5T800-80H160Zm0-80h640v-480H160v480Zm240-560h160v-80H400v80ZM160-160v-480 480Zm280-200v120h80v-120h120v-80H520v-120h-80v120H320v80h120Z"></path>
+                    </svg>
+                    <h2 class="textIconSectors">ENFERMAGEM</h2>
+                </span>
+            </div> 
+            <div class="sectors" onclick="loadArrayQuestions(3)">                
+                <span class="menuIconSectors">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="86px" viewBox="0 -960 960 960" width="81px" fill="#e8eaed">
+                        <path d="M410-120v-238L204-239l-70-121 206-120-206-119 70-121 206 119v-239h140v239l206-119 70 121-206 119 206 120-70 121-206-119v238H410Z"></path>
+                    </svg>
+                    <h2 class="textIconSectors">EMERGÊNCIA</h2>
+                </span>
+            </div> 
+            <div class="sectors" onclick="loadArrayQuestions(4)">                
+                <span class="menuIconSectors">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="81px" viewBox="0 -960 960 960" width="81px" fill="#e8eaed">
+                        <path d="M280-80v-366q-51-14-85.5-56T160-600v-280h80v280h40v-280h80v280h40v-280h80v280q0 56-34.5 98T360-446v366h-80Zm400 0v-320H560v-280q0-83 58.5-141.5T760-880v800h-80Z"/>
+                    </svg>
+                    <h2 class="textIconSectors">ALIMENTAÇÃO</h2>
+                </span>
+            </div> 
+        </div>
+    </main>
+</body>
+</html>

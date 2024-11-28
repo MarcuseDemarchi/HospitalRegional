@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="css/styleDashBoard.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/scriptDashBoard.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Painel Administrativo</h1>
+    </header>
+    <div class="containerDashBoard">
+      <div class="containerAnalicts">
+        <div class="titleContainer">
+            <h2 class="titleContainers">Gerenciamento de Perguntas</h2>
+            <select id="filter-sector" name="filter-sector">
+            </select>
+        </div>
+        <div class="analicts">
+            <form id="question-form">
+                <label for="setor">Setor:</label>
+                <select id="setor" name="setor">
+                </select>
+                <label for="pergunta">Pergunta:</label>
+                <input type="text" id="pergunta" name="pergunta" required>
+                <button type="submit">Adicionar</button>
+            </form>
+            <div class="table-container">
+                <table id="questions-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Setor</th>
+                            <th>Pergunta</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+      <div class="containerAnalicts">
+        <div class="titleContainer">
+            <h2 class="titleContainers">Gerenciamento de Usuários</h2>
+        </div>
+        <div class="analicts">
+            <form id="user-form">
+                <label for="user-name">Nome:</label>
+                <input type="text" id="user-name" name="user-name" required>
+                <label for="user-password">Senha:</label>
+                <input type="password" id="user-password" name="user-password" required>
+                <label for="user-sector">Setor:</label>
+                <select id="user-sector" name="user-sector">
+                </select>
+                <button type="submit">Adicionar</button>
+            </form>
+            <div class="table-container">
+                <table id="users-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Setor</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="containerAnalicts">
+        <div class="titleContainer">
+            <h2 class="titleContainers">Gráfico de Avaliações</h2>
+        </div>
+        <div class="analicts">
+            <canvas id="evaluation-chart"></canvas>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

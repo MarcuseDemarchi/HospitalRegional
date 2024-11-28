@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styleQuestions.css">  
+    <!--JS-->
+    <script src="js/scriptQuestions.js"></script>
+    <title>Question</title>
+</head>
+<body onload='loadComponents()'>
+    <main>    
+        <div class="onClose">
+            <a href="Index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960" width="60px" fill="#e8eaed">
+                    <path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/>
+                </svg>
+            </a>
+        </div>
+
+        <div class="containerHeader">
+            <h1>Pergunta</h1>
+            <p id="Question"></p>
+        </div>        
+
+        <div class="btnsQuestions">
+        </div>
+
+        <div class="divFooter">
+            <div class="containerResponse">
+                <h1>FeedBack <small>(opcional)</small></h1>
+                <input type="text" name="reponseTxt" id="reponseTxt" placeholder="Escreva o que você esta sentindo">
+            </div>
+    
+            <div class="containerBtn">
+                <button id="ant" onclick="decQuestion()">Voltar</button>
+                <button id="prox" onclick="incQuestion()">Proximo</button>
+            </div>
+        </div>        
+    </main>
+    
+</body>
+</html>
